@@ -2,3 +2,13 @@
     background-color: #CC1414;
     color: rgb(201, 97, 23);
 }
+
+.images{
+    height: 150px;
+    width: 230px;
+}
+
+.icono{
+    height: 50px;
+    width: 50px;
+}
