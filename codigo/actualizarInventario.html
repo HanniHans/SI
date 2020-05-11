@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../style/c.css">
+  <title>Document</title>
+
+  <script type="text/javascript">
+    function showContent() {
+        element = document.getElementById("content");
+        elementt = document.getElementById("content1");
+        element1 = document.getElementById("content2");
+        element3 = document.getElementById("content3");
+        check = document.getElementById("check");
+        check1 = document.getElementById("check1");
+        if (check.checked) {
+            element.style.display='block';
+            elementt.style.display='block';
+            element1.style.display='block';
+            element3.style.display='block';
+        }
+        else {
+            element.style.display='none';
+        }
+        if (check1.checked) {
+            element1.style.display='block';
+            element3.style.display='block';
+        }
+        else {
+            element.style.display='none';
+        }
+        
+    }
+</script>
+
+</head>
+
+<body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(252, 135, 1);">
+      <a class="navbar-brand" href="#">El Reino</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tomaOrdenes.html">Toma de Ordenes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contabilidad.html">Contabilidad</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="listaPedidos.html">Lista de Pedidos</a>
+            </li>
+          
+        </ul>
+      </div>
+    </nav>
+
+    <br>
+    <h3>Actualizar Inventario</h3> 
+    <br>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Seleccionar</th>
+            <th scope="col">Producto</th>
+            <th scope="col">Entrada/Salida</th>
+            <th scope="col">Cantidad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox" name="check" id="check" value="1" onchange="javascript:showContent()" /></td>
+            <td >Carne_1</td>
+            <td>
+                <select class="form-control form-control-sm" id="content" style="display: none;">
+                    <option>Entrada</option>
+                    <option>Salida</option>
+                  </select>
+            </td>
+            <td>
+                <input type="text" name="" id="content1" style="display: none;">
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="check" id="check1" value="1" onchange="javascript:showContent()" /></td>
+            <td >Carne_2</td>
+            <td>
+                <select class="form-control form-control-sm" id="content2" style="display: none;">
+                    <option>Entrada</option>
+                    <option>Salida</option>
+                  </select>
+            </td>
+            <td>
+                <input type="text" name="" id="content3" style="display: none;">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+    <script src="../bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../bootstrap/js/popper.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
