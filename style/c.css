@@ -12,3 +12,11 @@
     height: 50px;
     width: 50px;
 }
+
+body{
+    background-color: #feb56c;
+}
+
+.comida{
+    background-color: rgb(252, 135, 1);
+}
