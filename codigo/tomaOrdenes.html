@@ -1,112 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../style/c.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../style/c.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(252, 135, 1);">
-        <a class="navbar-brand" href="#">El Reino</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(252, 135, 1);">
+    <a class="navbar-brand" href="#">El Reino</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div id="accordion">
+    <br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <button id="alitas1" type="button" class="btn btn-outline-dark btn-block" data-target="#alitas"
+            data-toggle="collapse" aria-expanded="false" aria-controls="alitas">Alitas</button>
         </div>
-      </nav>
+        <div class="col-3">
+          <button id="hamburguesa1" type="button" class="btn btn-outline-dark btn-block" data-target="#hamburguesas"
+            data-toggle="collapse" aria-expanded="false" aria-controls="Hamburguesas">Hamburguesas</button>
+        </div>
 
-      <div id="accordion">
-        <br><br>
-          <div class="container">
-            <div class="row">
-              <div class="col-4">
-                <button id="hamburguesa1" type="button" class="btn btn-outline-dark btn-block" data-target="#hamburguesas" data-toggle="collapse" aria-expanded="false" aria-controls="Hamburguesas">Hamburguesas</button>
-              </div>
-              <div class="col-4">
-                <button id="alitas1" type="button" class="btn btn-outline-dark btn-block" data-target="#alitas" data-toggle="collapse" aria-expanded="false" aria-controls="alitas">Alitas</button>
-              </div>
-              <div class="col-4">
-                <button id="otros1" type="button" class="btn btn-outline-dark btn-block" data-target="#otros" data-toggle="collapse" aria-expanded="false" aria-controls="otros">otros</button>
-              </div>
+        <div class="col-3">
+          <button id="otros1" type="button" class="btn btn-outline-dark btn-block" data-target="#otros"
+            data-toggle="collapse" aria-expanded="false" aria-controls="otros">otros</button>
+        </div>
 
+        <div class="col-3">
+          <table class="table table-bordered table-sm">
+            <thead>
+              <tr>
+                <th>Resumen de Orden</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hamburguesa Arrachera</td>
+              </tr>
+              <tr>
+                <td>Hot-Dog</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="hamburguesas" data-parent="#accordion">
+            <div class="card card-body">
+              Arrachera
+            </div>
+
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="hamburguesas" data-parent="#accordion">
+            <div class="card card-body">
+              Hawaina
             </div>
           </div>
-
-          <br>
-
-          <div class="container">
+        </div>
+      </div>
+    </div>
+      <div class="container">
         <div class="row">
-          <div class="col">
-            <div class="collapse multi-collapse" id="hamburguesas" data-parent="#accordion">
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-                
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-
-        <div class="container">
-          <div class="row">
           <div class="col">
             <div class="collapse multi-collapse" id="alitas" data-parent="#accordion">
               <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                Habanero
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="alitas" data-parent="#accordion">
+              <div class="card card-body">
+                Diabla
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="alitas" data-parent="#accordion">
+              <div class="card card-body">
+                Tamarindo
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="alitas" data-parent="#accordion">
+              <div class="card card-body">
+                BBQ
               </div>
             </div>
           </div>
         </div>
-        </div>
-
-        </div>
       </div>
 
-      <script src="../bootstrap/js/jquery-3.3.1.slim.min.js"></script>
-      <script src="../bootstrap/js/popper.min.js"></script>
-      <script src="../bootstrap/js/bootstrap.min.js"></script>
-  </body>
-  </html>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="otros" data-parent="#accordion">
+              <div class="card card-body">
+                Chorizo Empapelado
+              </div>
+  
+  
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="otros" data-parent="#accordion">
+              <div class="card card-body">
+                Hot-Dogs
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+    
+  </div>
+
+  <script src="../bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="../bootstrap/js/popper.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
