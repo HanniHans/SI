@@ -44,6 +44,65 @@
         </div>
       </nav>
 
+      <div id="accordion">
+        <br><br>
+          <div class="container">
+            <div class="row">
+              <div class="col-4">
+                <button id="hamburguesa1" type="button" class="btn btn-outline-dark btn-block" data-target="#hamburguesas" data-toggle="collapse" aria-expanded="false" aria-controls="Hamburguesas">Hamburguesas</button>
+              </div>
+              <div class="col-4">
+                <button id="alitas1" type="button" class="btn btn-outline-dark btn-block" data-target="#alitas" data-toggle="collapse" aria-expanded="false" aria-controls="alitas">Alitas</button>
+              </div>
+              <div class="col-4">
+                <button id="otros1" type="button" class="btn btn-outline-dark btn-block" data-target="#otros" data-toggle="collapse" aria-expanded="false" aria-controls="otros">otros</button>
+              </div>
+
+            </div>
+          </div>
+
+          <br>
+
+          <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="hamburguesas" data-parent="#accordion">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+        <div class="container">
+          <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="alitas" data-parent="#accordion">
+              <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        </div>
+      </div>
 
       <script src="../bootstrap/js/jquery-3.3.1.slim.min.js"></script>
       <script src="../bootstrap/js/popper.min.js"></script>
