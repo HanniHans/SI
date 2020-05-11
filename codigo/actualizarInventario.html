@@ -12,26 +12,16 @@
     function showContent() {
         element = document.getElementById("content");
         elementt = document.getElementById("content1");
-        element1 = document.getElementById("content2");
-        element3 = document.getElementById("content3");
         check = document.getElementById("check");
-        check1 = document.getElementById("check1");
+        
         if (check.checked) {
             element.style.display='block';
             elementt.style.display='block';
-            element1.style.display='block';
-            element3.style.display='block';
         }
         else {
             element.style.display='none';
         }
-        if (check1.checked) {
-            element1.style.display='block';
-            element3.style.display='block';
-        }
-        else {
-            element.style.display='none';
-        }
+        
         
     }
 </script>
@@ -79,6 +69,7 @@
         </thead>
         <tbody>
           <tr>
+
             <td><input type="checkbox" name="check" id="check" value="1" onchange="javascript:showContent()" /></td>
             <td >Carne_1</td>
             <td>
@@ -88,22 +79,11 @@
                   </select>
             </td>
             <td>
-                <input type="text" name="" id="content1" style="display: none;">
+                <input type="text" id="content1" style="display: none;">
             </td>
+
           </tr>
-          <tr>
-            <td><input type="checkbox" name="check" id="check1" value="1" onchange="javascript:showContent()" /></td>
-            <td >Carne_2</td>
-            <td>
-                <select class="form-control form-control-sm" id="content2" style="display: none;">
-                    <option>Entrada</option>
-                    <option>Salida</option>
-                  </select>
-            </td>
-            <td>
-                <input type="text" name="" id="content3" style="display: none;">
-            </td>
-          </tr>
+          
         </tbody>
       </table>
 
